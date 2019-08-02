@@ -10,7 +10,8 @@ const mail = nodemailer.createTransport({
         pass: config.auth.pass,
     },
     tls: {
-        ciphers: 'SSLv3'
+        ciphers: 'SSLv3',
+        rejectUnauthorized: false,
     }
 });
 
