@@ -4,10 +4,13 @@ const config = require('./config');
 const mail = nodemailer.createTransport({
     host: config.host,
     port: config.port,
-    secure: config.secure,
+    secure: false,
     auth: {
         user: config.auth.user,
         pass: config.auth.pass,
+    },
+    tls: {
+        ciphers: 'SSLv3'
     }
 });
 
