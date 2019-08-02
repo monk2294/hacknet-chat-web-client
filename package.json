@@ -1,0 +1,14 @@
+{
+  "name": "smtp-test",
+  "version": "0.0.1",
+  "description": "SMTP test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bogdan.urazakaev@bsc-ideas.com",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.3.0"
+  }
+}
